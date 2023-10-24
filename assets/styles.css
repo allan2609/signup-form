@@ -24,3 +24,21 @@ time, mark, audio, video {
   src: url(../assets/Norse-Bold.otf);
 }
 
+.wrapper {
+  display: flex;
+  flex: 1;
+}
+
+.logo, .main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.logo {
+  background-image: url("../assets/background.jpg");
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  font-family: norse-bold;
+  height: 100vh;
+}
