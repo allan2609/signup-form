@@ -165,7 +165,7 @@ button {
 .form-items > * {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-right: 3rem;
+  margin-right: 3vw;
 }
 
 .login {
