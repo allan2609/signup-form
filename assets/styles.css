@@ -64,19 +64,30 @@ button {
 }
 
 .logo {
-  background-image: url("../assets/background.jpg");
-  background-size: 100vh;
-  background-repeat: no-repeat;
   font-family: norse-bold;
   height: 100vh;
   flex: 1 1 35%;
   align-items: center;
 }
 
+.logo:after {
+  background-image: url("../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vh;
+  content: "";
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 35%;
+  z-index: -1;
+}
+
 .logo-background {
   display: flex;
   position: fixed;
   top: 30%;
+  left: 0px;
   width: 35%;
   align-items: center;
   justify-content: center;
@@ -133,7 +144,7 @@ button {
 }
 
 .credits {
-  position: absolute;
+  position: fixed;
   font-family: Arial, Helvetica, sans-serif;
   color: lightgray;
   font-size: 0.75rem;
