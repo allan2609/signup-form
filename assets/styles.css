@@ -18,3 +18,9 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+@font-face {
+  font-family: norse-bold;
+  src: url(../assets/Norse-Bold.otf);
+}
+
