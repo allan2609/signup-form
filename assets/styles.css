@@ -55,7 +55,13 @@ input {
   width: 16rem;
   border-radius: 0.25rem;
   outline: none;
+  background-color: #f7f7f5;
   border: 1px solid #E5E7EB;
+}
+
+input:focus {
+  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 label {
