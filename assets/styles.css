@@ -19,14 +19,30 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 @font-face {
   font-family: norse-bold;
   src: url(../assets/Norse-Bold.otf);
 }
 
 a {
-  color: lightgray;
-  
+  color: lightgray;  
+}
+
+p {
+  margin-top: 2rem;
+}
+
+button {
+  width: 12rem;
+  height: 2.5rem;
+  background-color: #596D48;
+  border: 1px solid #596D48;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .wrapper {
@@ -71,6 +87,32 @@ a {
 
 .main {
   flex: 1 1 65%;
+}
+
+.description {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  font-size: 1.25rem;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.form {
+  background-color: white;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-family: Roboto, sans-serif;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1rem 2rem;
+  font-family: Roboto, sans-serif;
+  background-color: #f5f5f5;
+  box-shadow: 1px 0px 4px 4px rgba(0, 0, 0, 0.2)
 }
 
 .credits {
