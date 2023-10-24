@@ -24,6 +24,11 @@ time, mark, audio, video {
   src: url(../assets/Norse-Bold.otf);
 }
 
+a {
+  color: lightgray;
+  
+}
+
 .wrapper {
   display: flex;
   flex: 1;
@@ -45,16 +50,22 @@ time, mark, audio, video {
 }
 
 .logo-background {
-  background-color: black;
-  opacity: 50%;
+  display: flex;
   position: fixed;
   top: 35%;
   width: 35%;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0, 0, 0, 0.5);
 }
 
 .odin-logo {
-  width: 25%;
-  background-color: black;
+  height: 5rem;
+}
+
+.odin-text {
+  color: white;
+  font-size: 5rem;
   opacity: 100%;
 }
 
