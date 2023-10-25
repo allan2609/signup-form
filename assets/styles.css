@@ -50,26 +50,9 @@ form section span label {
   display: block;
 }
 
-input {
-  height: 1.75rem;
-  width: 16rem;
-  border-radius: 0.25rem;
-  outline: none;
-  background-color: #f7f7f5;
-  border: 1px solid #E5E7EB;
-}
-
 input:focus {
   border: 1px solid blue;
   outline: 1px solid blue;
-}
-
-label {
-  display: block;
-  width: 16rem;
-  font-size: 0.9rem;
-  color: #404040;
-  text-transform: uppercase;
 }
 
 p {
@@ -87,59 +70,186 @@ button {
   font-weight: bold;
 }
 
-.wrapper {
-  display: flex;
-  flex: 1;
+@media (max-width: 600px) {
+  label {
+    display: block;
+    width: 100%;
+    font-size: 0.9rem;
+    color: #404040;
+    text-transform: uppercase;
+  }
+
+  input {
+    height: 1.75rem;
+    width: 75vw;
+    border-radius: 0.25rem;
+    outline: none;
+    background-color: #f7f7f5;
+    border: 1px solid #E5E7EB;
+  }
+
+  .wrapper {
+    display: block;
+  }
+
+  .logo, .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    display: flex;
+    font-family: norse-bold;
+    height: 20rem;
+    flex: 1;
+    align-items: center;
+  }
+
+  .logo:after {
+    background-image: url("../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    content: "";
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .logo-background {
+    display: flex;
+    position: absolute;
+    top: 7rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 0, 0, 0.5);
+  }
+
+  .odin-logo {
+    height: 5rem;
+  }
+
+  .odin-text {
+    color: white;
+    font-size: 5rem;
+    opacity: 100%;
+  }
+
+  .main {
+    flex: 1 1 100%;
+  }
+
+  .form {
+    background-color: white;
+    padding: 2rem;
+    font-size: 1.25rem;
+    font-family: Roboto, sans-serif;
+  }
+
+  .login {
+    align-items: center;
+  }
+
+  .credits {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightgray;
+    font-size: 0.75rem;
+    top: 18rem;
+  }
 }
 
-.logo, .main {
-  display: flex;
-  flex-direction: column;
-}
 
-.logo {
-  font-family: norse-bold;
-  height: 100vh;
-  flex: 1 1 35%;
-  align-items: center;
-}
+@media (min-width: 600px) {
+  label {
+    display: block;
+    width: 16rem;
+    font-size: 0.9rem;
+    color: #404040;
+    text-transform: uppercase;
+  }
 
-.logo:after {
-  background-image: url("../assets/background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100vh;
-  content: "";
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 35%;
-  z-index: -1;
-}
+  input {
+    height: 1.75rem;
+    width: 16rem;
+    border-radius: 0.25rem;
+    outline: none;
+    background-color: #f7f7f5;
+    border: 1px solid #E5E7EB;
+  }
 
-.logo-background {
-  display: flex;
-  position: fixed;
-  top: 30%;
-  left: 0px;
-  width: 35%;
-  align-items: center;
-  justify-content: center;
-  background: rgb(0, 0, 0, 0.5);
-}
+  .wrapper {
+    display: flex;
+    flex: 1;
+  }
 
-.odin-logo {
-  height: 5rem;
-}
+  .logo, .main {
+    display: flex;
+    flex-direction: column;
+  }
 
-.odin-text {
-  color: white;
-  font-size: 5rem;
-  opacity: 100%;
-}
+  .logo {
+    font-family: norse-bold;
+    height: 100vh;
+    flex: 1 1 35%;
+    align-items: center;
+  }
 
-.main {
-  flex: 1 1 65%;
+  .logo:after {
+    background-image: url("../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    content: "";
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 35%;
+    z-index: -1;
+  }
+
+  .logo-background {
+    display: flex;
+    position: fixed;
+    top: 30%;
+    left: 0px;
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 0, 0, 0.5);
+  }
+
+  .odin-logo {
+    height: 5rem;
+  }
+
+  .odin-text {
+    color: white;
+    font-size: 5rem;
+    opacity: 100%;
+  }
+
+  .main {
+    flex: 1 1 65%;
+  }
+
+  .form {
+    background-color: white;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    font-family: Roboto, sans-serif;
+  }
+
+  .credits {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightgray;
+    font-size: 0.75rem;
+    bottom: 1rem;
+  }
 }
 
 .description {
@@ -149,13 +259,6 @@ button {
   font-family: Roboto, sans-serif;
   font-weight: bold;
   line-height: 1.5;
-}
-
-.form {
-  background-color: white;
-  padding: 1rem 2rem;
-  font-size: 1.25rem;
-  font-family: Roboto, sans-serif;
 }
 
 .form > p {
@@ -183,10 +286,3 @@ button {
   text-decoration: none;
 }
 
-.credits {
-  position: fixed;
-  font-family: Arial, Helvetica, sans-serif;
-  color: lightgray;
-  font-size: 0.75rem;
-  bottom: 1rem;
-}
