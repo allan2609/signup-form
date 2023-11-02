@@ -26,9 +26,8 @@
           <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</i> to get started.</em>
           <p>You <em>know</em> you want to.</p>
         </div>
-        <div class="form">
-          <p>Let's do this!</p>
-          <form>
+          <form class="form">
+            <p>Let's do this!</p>
             <section class="form-items">
               <span>
                 <label for="firstname" class="required">First Name</label>
@@ -48,19 +47,18 @@
               </span>
               <span>
                 <label for="password" class="required">Password</label>
-                <input type="text" id="password" required>
+                <input type="password" id="password" min="6" max="20" required>
               </span>
               <span>
                 <label for="confirmpw" class="required">Confirm password</label>
-                <input type="text" id="confirmpw" required>
+                <input type="password" id="confirmpw" minlength="8" required>
               </span>
             </section>
+            <div class="login">
+              <button type="submit">Create Account</button>
+              <p>Already have an account? <a href="https://allan2609.github.io/odin-landing-page/">Log in</a></p>
+            </div>
           </form>
-        </div>
-        <div class="login">
-          <button type="submit">Create Account</button>
-          <p>Already have an account? <a href="https://allan2609.github.io/odin-landing-page/">Log in</a></p>
-        </div>
       </section>
     </div>
   </body>
