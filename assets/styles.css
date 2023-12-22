@@ -260,6 +260,7 @@ button:hover {
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
+    flex: 1;
   }
 
   .credits {
